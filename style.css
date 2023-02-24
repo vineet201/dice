@@ -15,7 +15,7 @@ body {
 .container {
     text-align: center;
     padding: 2rem;
-    background-color: #fff;
+    background-color: #fcfdfd;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     max-width: 90%;
@@ -43,19 +43,29 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-/* .circle:hover {
+.circle:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 32px rgba(108, 8, 238, 0.808);
-} */
+    box-shadow: 0 8px 32px rgba(45, 221, 245, 0.808);
+}
 
 .circle:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 32px rgba(150, 231, 231, 0.808);
+    box-shadow: 0 8px 32px rgba(212, 150, 231, 0.808);
 }
 
 .circle.hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 32px rgba(186, 41, 230, 0.808);
+    box-shadow: 0 8px 32px rgba(230, 217, 41, 0.808);
+}
+
+.circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgba(98, 7, 218, 0.808);
+}
+
+.circle.hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgb(17, 2, 71);
 }
 
 
@@ -142,3 +152,65 @@ h1 {
 
 
 
+/* For better and responsive view in android  */
+
+
+
+
+@media screen and (orientation: portrait) {
+    body {
+      font-size: 48px;
+    }
+  
+    .container {
+      max-width: 100%;
+      padding: 6rem;
+      border-radius: 60px;
+    }
+  
+    .circle {
+      width: 600px;
+      height: 600px;
+      margin: 6rem auto;
+      border-radius: 300px;
+    }
+  
+    .circle__inner {
+      width: 420px;
+      height: 420px;
+      border-radius: 210px;
+    }
+  
+    .result {
+      font-size: 18rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .btn {
+      font-size: 3.6rem;
+      padding: 3rem 6rem;
+      border-radius: 75px;
+      margin-top: 6rem;
+    }
+  }
+
+  
+  @media screen and (orientation: portrait) {
+    body {
+      font-size: 48px;
+    }
+    
+    h1 {
+      font-size: 4rem;
+    }
+    
+    .result {
+      font-size: 12rem;
+    }
+    
+    .btn {
+      font-size: 3.6rem;
+    }
+  }
+  
